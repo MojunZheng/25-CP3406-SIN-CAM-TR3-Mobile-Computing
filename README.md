@@ -1,6 +1,6 @@
-# Book and Reading Tracker 📚
+# Book and Reading Tracker
 
-This repository contains the initial project setup for **CP3406 Assignment 1**.  
+This repository contains the initial project setup for **CP3406 Assessment 1**.  
 The app is based on the **Book and Reading Tracker** scenario.
 
 ---
