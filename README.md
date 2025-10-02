@@ -16,7 +16,7 @@ This project is currently at the **planning and initial setup** stage.
 
 ---
 
-## 🎯 Target Audience
+## Target Audience
 - Casual readers who want to keep track of their reading
 - Book enthusiasts who like to organise reviews and progress
 - Professional reviewers who need to manage reading logs
