@@ -1,8 +1,0 @@
-{
-	"appId": "com.booktracker.app",
-	"appName": "Book Tracker",
-	"webDir": "build",
-	"server": {
-		"androidScheme": "https"
-	}
-}
