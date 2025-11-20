@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Nest/Bowl -->
+  <ellipse cx="100" cy="120" rx="60" ry="35" fill="#8B6F47" opacity="0.8"/>
+  <ellipse cx="100" cy="115" rx="55" ry="30" fill="#A0826D" opacity="0.9"/>
+  <ellipse cx="100" cy="110" rx="50" ry="25" fill="#C19A6B"/>
+  
+  <!-- Book -->
+  <g transform="translate(100, 80)">
+    <!-- Book spine -->
+    <rect x="-5" y="-20" width="10" height="35" fill="#5D4E37"/>
+    
+    <!-- Left page -->
+    <path d="M -5,-20 Q -25,-18 -30,-10 L -30,15 Q -25,20 -5,18 Z" fill="#F5E6D3"/>
+    <path d="M -5,-20 Q -25,-18 -30,-10 L -30,15 Q -25,20 -5,18 Z" fill="#5D4E37" opacity="0.1"/>
+    
+    <!-- Right page -->
+    <path d="M 5,-20 Q 25,-18 30,-10 L 30,15 Q 25,20 5,18 Z" fill="#F5E6D3"/>
+    <path d="M 5,-20 Q 25,-18 30,-10 L 30,15 Q 25,20 5,18 Z" fill="#5D4E37" opacity="0.1"/>
+    
+    <!-- Book cover shadow -->
+    <rect x="-5" y="-20" width="10" height="35" fill="#3E2F23" opacity="0.3"/>
+  </g>
+  
+  <!-- Text: BookNest -->
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#5D4E37" text-anchor="middle">BookNest</text>
+</svg>

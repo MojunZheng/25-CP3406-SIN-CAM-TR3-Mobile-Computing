@@ -1,0 +1,162 @@
+`<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>New Book Tracker System</title>
+    <link rel="shortcut icon" href="./media/book-tracker-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet" />
+    <!-- Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <img class="img-responsive" src="./media/book-tracker-icon.png" />
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">My Books</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Browse<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Top 10</a></li>
+                <li><a href="#">Newly Released</a></li>
+                <li><a href="#">Trending</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Free Giveaways</a></li>
+              </ul>
+            </li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" class="form-control search" placeholder="Search" />
+            </div>
+            <button type="submit" class="btn btn-default searchbtn">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <div id="body_wrapper">
+      <div id="body">
+        <!-- Body Div -->
+        <h1 id="heading" class="animated pulse">Welcome to Book Tracker 📖</h1>
+        <!-- Tag line-->
+        <h2 id="tagLine">Read. Track. Grow.</h2>
+        <h3 id="helperText">Add a book to get started!</h3>
+        <!-- User can record his book here -->
+        <div id="container">
+          <input class="inputBook" id="inputAuthor" type="text" name="inputAuthor" placeholder="📄 Author" required />
+          <input class="inputBook" id="inputTitle" type="text" name="inputBook" placeholder="📖 Book title" required />
+          <input
+            class="inputBook"
+            id="inputStartDate"
+            type="text"
+            onfocus="(this.type='date')"
+            name="inputStartDate"
+            placeholder="📅 Start Date"
+            required
+          />
+          <input
+            class="inputBook"
+            id="inputFinishedDate"
+            type="text"
+            onfocus="(this.type='date')"
+            name="inputFinishedDate"
+            placeholder="🗓 Finished Date"
+            required
+          />
+          <input
+            class="inputBook"
+            id="inputProgress"
+            type="number"
+            name="inputProgress"
+            placeholder="📊 Progress (%)"
+          />
+          <button id="record" class="btn btn-primary">Add</button>
+          <table class="table">
+            <thead>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Start Date</th>
+              <th>Finished Date</th>
+              <th>Progress</th>
+              <th>Delete</th>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Main Body Wrapper Div Closed -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
+
+<!--Testing Git functionality -->
