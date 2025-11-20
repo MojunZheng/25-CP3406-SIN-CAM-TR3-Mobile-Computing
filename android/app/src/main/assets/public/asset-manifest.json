@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/book-tracker/static/css/main.8613fb69.css",
+    "main.js": "/book-tracker/static/js/main.b180c39f.js",
+    "static/media/background.jpg": "/book-tracker/static/media/background.0fc15df2abe38b2fce9a.jpg",
+    "index.html": "/book-tracker/index.html",
+    "main.8613fb69.css.map": "/book-tracker/static/css/main.8613fb69.css.map",
+    "main.b180c39f.js.map": "/book-tracker/static/js/main.b180c39f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8613fb69.css",
+    "static/js/main.b180c39f.js"
+  ]
+}
