@@ -33,9 +33,9 @@ This project is currently at the **planning and initial setup** stage.
 ## Development Timeline
 - Week 2: Planning document (Part A) ✅  
 - Week 3: Code review presentation (Part B) ✅  
-- Week 4–7: Initial app development (core features, database, UI)  
-- Week 8–9: Testing and refinements  
-- Week 10: Final polishing and submission  
+- Week 4–7: Initial app development (core features, database, UI)   ✅
+- Week 8–9: Testing and refinements   ✅
+- Week 10: Final polishing and submission   ✅
 
 ---
 
